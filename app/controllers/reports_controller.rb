@@ -4,18 +4,19 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-      if params[:category].blank?
-      @reports = Report.all
-    else
-      @category_id = Category.find_by(description: params[:category]).id
-      @reports = Report.where(category_id: @category_id)
-    end
-
-    if params[:search]
-      @reports = Report.search(params[:search])
-    else
-      @reports = Report.all
-    end
+    #   if params[:category].blank?
+    #   @reports = Report.all
+    # else
+    #   @category_id = Category.find_by(description: params[:category]).id
+    #   @reports = Report.where(category_id: @category_id)
+    # end
+    #
+    # if params[:search]
+    #   @reports = Report.search(params[:search])
+    # else
+    #   @reports = Report.all
+    # end
+    render :json => Report.all
   end
 
 
