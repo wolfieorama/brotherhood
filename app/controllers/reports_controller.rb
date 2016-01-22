@@ -16,7 +16,8 @@ class ReportsController < ApplicationController
     # else
     #   @reports = Report.all
     # end
-    render :json => Report.all
+    # render :json => Report.all
+    render :nothing => true, :status => 200
   end
 
 

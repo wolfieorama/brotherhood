@@ -12,8 +12,4 @@ class Report < ActiveRecord::Base
     { :phone_no => self.phone_no } #NOT including the phone number
   end
 
-  # def as_json(options={})
-  #   super(:only => [:name])
-  # end
-
 end
