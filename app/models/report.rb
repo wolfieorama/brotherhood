@@ -7,9 +7,9 @@ class Report < ActiveRecord::Base
   def self.search(query)
     where("phone_no like ?", "%#{query}")
   end
-
-  def as_json(options={})
-    { :phone_no => self.phone_no } #NOT including the phone number
-  end
+  #
+  # def as_json(options={})
+  #   { :phone_no => self.phone_no } #NOT including the phone number
+  # end
 
 end

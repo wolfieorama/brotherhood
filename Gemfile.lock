@@ -42,11 +42,15 @@ GEM
       json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    blazer (1.1.0)
+      chartkick
+      rails
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
     builder (3.2.2)
     byebug (6.0.2)
+    chartkick (1.4.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -168,6 +172,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  blazer
   bootstrap-sass (~> 3.3.5)
   byebug
   coffee-rails (~> 4.1.0)
